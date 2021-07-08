@@ -6,6 +6,7 @@ pipeline {
             steps {
                 sh 'python --version'
                 echo 'Building..'
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                   }
         }
         stage('Test') {
