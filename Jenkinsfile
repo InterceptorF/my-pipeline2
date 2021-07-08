@@ -3,7 +3,8 @@ pipeline {
 
     stages {
         stage('Build') {
-            steps {               
+            steps { 
+                echo 'python3 -version'
                 echo 'Building..'
             }              
         }
